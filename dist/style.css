@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif; }
+  * html,
+  * body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: #56ab2f; }
+    * html .slider,
+    * body .slider {
+      overflow: hidden;
+      height: 500%; }
+      * html .slider .row,
+      * body .slider .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row; }
+        * html .slider .row:after, * html .slider .row:before,
+        * body .slider .row:after,
+        * body .slider .row:before {
+          box-sizing: border-box; }
+        * html .slider .row .col-6,
+        * body .slider .row .col-6 {
+          width: 50%;
+          position: relative; }
+        * html .slider .row .bg-red,
+        * body .slider .row .bg-red {
+          background-color: #ff3838; }
+        * html .slider .row .bg-blue,
+        * body .slider .row .bg-blue {
+          background-color: #021b79; }
+      * html .slider .fullheight,
+      * body .slider .fullheight {
+        height: 100vh; }
+
+/*# sourceMappingURL=style.css.map */
