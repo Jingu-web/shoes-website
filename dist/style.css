@@ -32,6 +32,18 @@
         * html .slider .row .bg-blue,
         * body .slider .row .bg-blue {
           background-color: #021b79; }
+          * html .slider .row .bg-blue .product-img,
+          * body .slider .row .bg-blue .product-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%; }
+            * html .slider .row .bg-blue .product-img .img-wrapper .bounce img,
+            * body .slider .row .bg-blue .product-img .img-wrapper .bounce img {
+              height: auto;
+              width: 80%;
+              transform: rotate(-35deg); }
       * html .slider .fullheight,
       * body .slider .fullheight {
         height: 100vh; }
