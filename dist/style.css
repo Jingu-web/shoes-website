@@ -44,6 +44,30 @@
               height: auto;
               width: 80%;
               transform: rotate(-35deg); }
+          * html .slider .row .bg-blue .more-images,
+          * body .slider .row .bg-blue .more-images {
+            position: absolute;
+            right: 90px;
+            top: 50%; }
+            * html .slider .row .bg-blue .more-images .more-images-item,
+            * body .slider .row .bg-blue .more-images .more-images-item {
+              height: fit-content;
+              border-radius: 15px;
+              background-color: #fff;
+              overflow: hidden;
+              margin: 5px 0; }
+              * html .slider .row .bg-blue .more-images .more-images-item:hover,
+              * body .slider .row .bg-blue .more-images .more-images-item:hover {
+                cursor: pointer; }
+              * html .slider .row .bg-blue .more-images .more-images-item img,
+              * body .slider .row .bg-blue .more-images .more-images-item img {
+                height: auto;
+                width: 80px;
+                border-radius: 15px;
+                transition: 1s; }
+                * html .slider .row .bg-blue .more-images .more-images-item img:hover,
+                * body .slider .row .bg-blue .more-images .more-images-item img:hover {
+                  transform: scale(1.5); }
       * html .slider .fullheight,
       * body .slider .fullheight {
         height: 100vh; }

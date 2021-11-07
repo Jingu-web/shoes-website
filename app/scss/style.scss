@@ -66,6 +66,33 @@ $silver: #bdc3c7;
               }
             }
           }
+
+          .more-images {
+            position: absolute;
+            right: 90px;
+            top: 50%;
+
+            .more-images-item {
+              height: fit-content;
+              border-radius: 15px;
+              background-color: #fff;
+              overflow: hidden;
+              margin: 5px 0;
+              &:hover {
+                cursor: pointer;
+              }
+
+              img {
+                height: auto;
+                width: 80px;
+                border-radius: 15px;
+                transition: 1s;
+                &:hover {
+                  transform: scale(1.5);
+                }
+              }
+            }
+          }
         }
       }
 
