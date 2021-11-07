@@ -23,7 +23,6 @@ $silver: #bdc3c7;
   body {
     height: 100vh;
     overflow: hidden;
-    background-color: $green-one;
 
     .slider {
       overflow: hidden;
@@ -42,13 +41,117 @@ $silver: #bdc3c7;
           width: 50%;
           position: relative;
         }
+        //Left
+        .left {
+          .product-info {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            padding: 0 10%;
+            color: $black-two;
 
-        .bg-red {
-          background-color: $red;
+            .info-wrapper {
+              margin: auto;
+              position: relative;
+              text-align: right;
+
+              .product-price {
+                font-weight: 900;
+                font-size: xx-large;
+                color: $black;
+
+                span {
+                  font-size: large;
+                  color: $black-two;
+                }
+              }
+
+              .product-name {
+                h2 {
+                  font-weight: 900;
+                  font-size: xxx-large;
+                  color: $black;
+                }
+              }
+
+              .product-size {
+                margin: 20px 0;
+
+                .size-wrapper {
+                  display: flex;
+                  flex-flow: row-reverse;
+                  padding: 5px;
+
+                  div {
+                    font-weight: 900;
+                    margin: 5px;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    padding: 13px;
+                    border: 2px solid $silver;
+                    color: $silver;
+
+                    &:hover {
+                      border: 2px solid $black;
+                      color: $black;
+                      cursor: pointer;
+                    }
+                  }
+
+                  .active {
+                    border: 2px solid $black;
+                    color: $black;
+                  }
+                }
+              }
+
+              .product-color {
+                .color-wrapper {
+                  display: flex;
+                  flex-flow: row-reverse;
+                  padding: 5px;
+
+                  .color-pallet {
+                    margin: 5px;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    padding: 3px;
+                    border: 2px solid $silver;
+                    background-color: $silver;
+                    &:hover {
+                      cursor: pointer;
+                      border: 2px solid $black;
+                    }
+
+                    .color {
+                      width: 40px;
+                      height: 40px;
+                      border-radius: 50%;
+                    }
+                    .bg-red {
+                      background-color: $red;
+                    }
+                    .bg-blue {
+                      background-color: $blue-one;
+                    }
+                    .bg-white {
+                      background-color: $white;
+                    }
+                  }
+                  .active {
+                    border: 2px solid $black;
+                  }
+                }
+              }
+            }
+          }
         }
-        .bg-blue {
-          background-color: $blue-one;
-
+        //Right
+        .right {
           .product-img {
             position: absolute;
             top: 50%;
