@@ -46,6 +46,10 @@ $silver: #bdc3c7;
           border-bottom-left-radius: 100%;
         }
 
+        .fullheight {
+          height: 100vh;
+        }
+
         //Left
         .left {
           .product-info {
@@ -228,8 +232,43 @@ $silver: #bdc3c7;
         }
       }
 
-      .fullheight {
-        height: 100vh;
+      .slide-control {
+        display: flex;
+        padding: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .slide-control-item {
+          height: 50px;
+          width: 50px;
+          margin: 10px;
+          transition: 0.5s;
+          &:hover {
+            cursor: pointer;
+            transform: translateY(-30px);
+            border-bottom: 2px solid $black;
+          }
+
+          img {
+            height: auto;
+            width: 100%;
+            filter: grayscale(100%);
+            transform: rotate(-45deg);
+            &:hover {
+              filter: unset;
+            }
+
+            .active {
+              filter: unset;
+            }
+          }
+
+          .active {
+            border-bottom: 2px solid $black;
+          }
+        }
       }
     }
   }

@@ -28,6 +28,9 @@
         * html .slider .row .img-col,
         * body .slider .row .img-col {
           border-bottom-left-radius: 100%; }
+        * html .slider .row .fullheight,
+        * body .slider .row .fullheight {
+          height: 100vh; }
         * html .slider .row .left .product-info,
         * body .slider .row .left .product-info {
           position: absolute;
@@ -174,8 +177,39 @@
               * html .slider .row .right .more-images .more-images-item img:hover,
               * body .slider .row .right .more-images .more-images-item img:hover {
                 transform: scale(1.5); }
-      * html .slider .fullheight,
-      * body .slider .fullheight {
-        height: 100vh; }
+      * html .slider .slide-control,
+      * body .slider .slide-control {
+        display: flex;
+        padding: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%); }
+        * html .slider .slide-control .slide-control-item,
+        * body .slider .slide-control .slide-control-item {
+          height: 50px;
+          width: 50px;
+          margin: 10px;
+          transition: 0.5s; }
+          * html .slider .slide-control .slide-control-item:hover,
+          * body .slider .slide-control .slide-control-item:hover {
+            cursor: pointer;
+            transform: translateY(-30px);
+            border-bottom: 2px solid #000; }
+          * html .slider .slide-control .slide-control-item img,
+          * body .slider .slide-control .slide-control-item img {
+            height: auto;
+            width: 100%;
+            filter: grayscale(100%);
+            transform: rotate(-45deg); }
+            * html .slider .slide-control .slide-control-item img:hover,
+            * body .slider .slide-control .slide-control-item img:hover {
+              filter: unset; }
+            * html .slider .slide-control .slide-control-item img .active,
+            * body .slider .slide-control .slide-control-item img .active {
+              filter: unset; }
+          * html .slider .slide-control .slide-control-item .active,
+          * body .slider .slide-control .slide-control-item .active {
+            border-bottom: 2px solid #000; }
 
 /*# sourceMappingURL=style.css.map */
