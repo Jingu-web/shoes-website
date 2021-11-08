@@ -148,6 +148,12 @@
           left: 50%;
           transform: translate(-50%, -50%);
           width: 100%; }
+          .right-to-left {
+            transition: 1s;
+            transform: translateX(100%); }
+
+          .active .right-to-left {
+            transform: translateX(0); }
           * html .slider .row .right .product-img .img-wrapper .bounce img,
           * body .slider .row .right .product-img .img-wrapper .bounce img {
             height: auto;

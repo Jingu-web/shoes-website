@@ -183,6 +183,7 @@ $silver: #bdc3c7;
             }
           }
         }
+
         //Right
         .right {
           .product-img {
@@ -191,6 +192,17 @@ $silver: #bdc3c7;
             left: 50%;
             transform: translate(-50%, -50%);
             width: 100%;
+
+            @at-root {
+              .right-to-left {
+                transition: 1s;
+                transform: translateX(100%);
+              }
+
+              .active .right-to-left {
+                transform: translateX(0);
+              }
+            }
 
             .img-wrapper {
               .bounce {
