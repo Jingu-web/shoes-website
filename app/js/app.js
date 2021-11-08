@@ -30,7 +30,7 @@ chooseProduct = (index) => {
     slider.style.marginTop = "-" + slideIndex + "00vh";
     slideControlItems[slideIndex].classList.add("active");
     slides[slideIndex].classList.add("active");
-  }, 1500);
+  }, 1400);
 };
 
 Array.from(slideControlItems).forEach((e, index) => {
