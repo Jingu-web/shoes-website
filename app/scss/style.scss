@@ -300,6 +300,23 @@ $silver: #bdc3c7;
 
             .img-wrapper {
               .bounce {
+                animation-name: bounce;
+                animation-timing-function: ease;
+                animation-iteration-count: infinite;
+                animation-duration: 3s;
+
+                @keyframes bounce {
+                  0% {
+                    transform: translateY(0);
+                  }
+                  50% {
+                    transform: translateY(-50px);
+                  }
+                  100% {
+                    transform: translateY(0);
+                  }
+                }
+
                 img {
                   height: auto;
                   width: 80%;

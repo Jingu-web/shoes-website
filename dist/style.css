@@ -234,11 +234,24 @@
 
           .active .right-to-left {
             transform: translateX(0); }
-          * html .slider .row .right .product-img .img-wrapper .bounce img,
-          * body .slider .row .right .product-img .img-wrapper .bounce img {
-            height: auto;
-            width: 80%;
-            transform: rotate(-35deg); }
+          * html .slider .row .right .product-img .img-wrapper .bounce,
+          * body .slider .row .right .product-img .img-wrapper .bounce {
+            animation-name: bounce;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-duration: 3s; }
+@keyframes bounce {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-50px); }
+  100% {
+    transform: translateY(0); } }
+            * html .slider .row .right .product-img .img-wrapper .bounce img,
+            * body .slider .row .right .product-img .img-wrapper .bounce img {
+              height: auto;
+              width: 80%;
+              transform: rotate(-35deg); }
         * html .slider .row .right .more-images,
         * body .slider .row .right .more-images {
           position: absolute;
