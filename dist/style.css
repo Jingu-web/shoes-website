@@ -8,6 +8,61 @@
   * body {
     height: 100vh;
     overflow: hidden; }
+    * html .navbar,
+    * body .navbar {
+      background-color: transparent;
+      padding: 10px 90px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 99;
+      display: flex; }
+      * html .navbar a,
+      * body .navbar a {
+        float: left;
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 900;
+        padding: 12px;
+        text-transform: uppercase; }
+      * html .navbar .logo,
+      * body .navbar .logo {
+        font-size: 30px;
+        flex: 1;
+        color: #000; }
+      * html .navbar .navbar-right a,
+      * body .navbar .navbar-right a {
+        transition: 0.5s; }
+        * html .navbar .navbar-right a:hover,
+        * body .navbar .navbar-right a:hover {
+          color: #000;
+          border-bottom: 2px solid #000; }
+        * html .navbar .navbar-right a.active,
+        * body .navbar .navbar-right a.active {
+          color: #000;
+          border-bottom: 2px solid #000; }
+      * html .navbar .cart,
+      * body .navbar .cart {
+        position: relative; }
+        * html .navbar .cart i,
+        * body .navbar .cart i {
+          font-size: x-large; }
+        * html .navbar .cart .badge,
+        * body .navbar .cart .badge {
+          position: absolute;
+          top: 0;
+          right: 1px;
+          font-size: 12px;
+          color: #fff;
+          background-color: #ff3838;
+          width: 20px;
+          height: 20px;
+          padding: 2px;
+          text-align: center;
+          justify-content: center;
+          border-radius: 50%; }
     * html .slider,
     * body .slider {
       overflow: hidden;

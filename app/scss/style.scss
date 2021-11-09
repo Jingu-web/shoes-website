@@ -24,6 +24,69 @@ $silver: #bdc3c7;
     height: 100vh;
     overflow: hidden;
 
+    .navbar {
+      background-color: transparent;
+      padding: 10px 90px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 99;
+      display: flex;
+
+      a {
+        float: left;
+        color: $white;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 900;
+        padding: 12px;
+        text-transform: uppercase;
+      }
+
+      .logo {
+        font-size: 30px;
+        flex: 1;
+        color: $black;
+      }
+
+      .navbar-right {
+        a {
+          transition: 0.5s;
+          &:hover {
+            color: $black;
+            border-bottom: 2px solid $black;
+          }
+          &.active {
+            color: $black;
+            border-bottom: 2px solid $black;
+          }
+        }
+      }
+      .cart {
+        position: relative;
+
+        i {
+          font-size: x-large;
+        }
+
+        .badge {
+          position: absolute;
+          top: 0;
+          right: 1px;
+          font-size: 12px;
+          color: $white;
+          background-color: $red;
+          width: 20px;
+          height: 20px;
+          padding: 2px;
+          text-align: center;
+          justify-content: center;
+          border-radius: 50%;
+        }
+      }
+    }
+
     .slider {
       overflow: hidden;
       height: 500%;
